@@ -1,0 +1,60 @@
+.A1 {
+    text-align: center;
+}
+#A2 {
+    margin-left: 600px; 
+}
+#A3 {
+    text-align: center;
+}
+#A4 {
+    text-align: center;
+}
+#A5 {
+    text-decoration: none;
+    margin-left: 600px;
+}
+.A6 {
+    text-decoration: none;
+}
+#A7 {
+    margin-bottom: 5px;
+}
+table, th, td {
+    border: 2px solid black;
+}
+#B1 {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+#B2 {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+}
+#B3 {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+#B4 {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+.R1 {
+    margin-bottom: 10px;
+}
+.SG {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+.SG span {
+    background-color: lightgreen;
+    border: 2px solid black;
+    padding: 15px;
+}
