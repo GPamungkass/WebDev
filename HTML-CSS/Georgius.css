@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    padding-left: 40px;
+}
 .A1 {
     text-align: center;
 }
@@ -31,30 +39,94 @@ table, th, td {
 #B2 {
     position: absolute;
     left: 40px;
-    bottom: 20px;
+    top: 20px;
 }
 #B3 {
     position: absolute;
     right: 40px;
-    top: 20px;
+    top: 6px;
 }
+
 #B4 {
     position: absolute;
-    left: 40px;
-    top: 20px;
+    left:40px;
+    top: 6px;
 }
 .R1 {
     margin-bottom: 10px;
 }
-.SG {
+.FL {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
-.SG span {
-    background-color: lightgreen;
+.FL span {
+    background-color: rgb(81, 223, 218);
     border: 2px solid black;
     padding: 15px;
 }
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color:rgb(120, 203, 167) ;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.container div {
+    background-color: #f1f1f1;
+    border:1px solid black ;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: white;
+}
+.banner {
+    height: 275px;
+    background: white url("singapura.jpg") center 30% no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid cornflowerblue;
+    overflow: hidden;
+}
+.article {
+    padding: 5px 20px;
+}
+#BG1 {
+    background-color: #e6e6e8;
+    font-family: Arial, sans-serif;
+}
+
+.container div {
+    transition: transform 0.3s, background-color 0.3s;
+}
+.container div:hover {
+    transform: scale(1.05);
+    background-color: lightyellow;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: auto;
+    }
+    .banner {
+        height: 180px;
+    }
+}
+.article a {
+    display: inline-block;
+}
+.article h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.article .author {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
